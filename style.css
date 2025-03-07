@@ -1,0 +1,334 @@
+/* General Navbar Styling */
+@font-face {
+    font-family: "helvetica";
+    src: url(C:\Users\meshr\Downloads\helvetica-255\Helvetica.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "helvetica", sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fcf5eb;
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fcf5eb;
+    padding: 7px 7px;
+    margin: 0 auto;
+    position: fixed;
+    x: 0;
+}
+
+/* WhatsApp Logo */
+.navbar .logo img {
+    width: 130px;
+    height: 30.6px;
+    padding: 0px 40px;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-family: "helvetica", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    /* transition: color 0.3s ease-in-out;  */
+    position: relative;
+}
+
+
+
+.navbar .nav-links a::before {
+    content: '';
+    /* WhatsApp Green */
+    position: absolute;
+    width: 0px;
+    bottom: -5px;
+    left: 0;
+    background-color: #25D366;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .nav-links a:hover::before {
+    width: 100%;
+    ;
+}
+
+.navbar .btn{
+    border: 1px solid black;
+    background: none;
+    padding: 10px 32px;
+    font-size: 20px;
+    font-family: "helvetica", sans-serif;;
+    cursor: pointer;
+    margin: 10px 30px;
+    margin-right: 145px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.navbar .btn1,.btn2{
+    color: #000;
+}
+.navbar .btn3,.btn4{
+    color: #fff;
+}
+.navbar .btn1:hover,.btn2:hover{
+    color: #fff;
+}
+.navbar .btn3:hover,.btn4:hover{
+    color: #000;
+}
+.navbar .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #000;
+    z-index: -1;
+    transition: 0.8s;
+}
+.navbar .btn{
+    border: 1px solid black;
+    background: none;
+    padding: 10px 32px;
+    font-size: 20px;
+    font-family: "helvetica", sans-serif;;
+    cursor: pointer;
+    margin: 10px 5px;
+    /* margin-right: 145px; */
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.navbar .btn1,.btn2{
+    color: #000;
+}
+.navbar .btn3,.btn4{
+    color: #fff;
+}
+.navbar .btn1:hover,.btn2:hover{
+    color: #fff;
+}
+.navbar .btn3:hover,.btn4:hover{
+    color: #000;
+}
+.navbar .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #000;
+    z-index: -1;
+    transition: 0.8s;
+}
+.navbar .btn1::before,.btn3::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.navbar .btn2::before,.btn4::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.navbar .btn3::before,.btn4::before{
+    height: 180%;
+}
+.navbar .btn1:hover::before,.btn2:hover::before{
+    height: 180%;
+}
+.navbar .btn3:hover::before,.btn4:hover::before{
+    height: 0%;
+}
+
+.navbar .button{
+    display: flex;
+    /* gap: 20px; */
+}
+.navbar .button .green{}
+
+
+.image {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    padding-top: 100px;
+  }
+
+.image img{
+    border-radius: 25px;
+    width: 95%;
+    height : 720px;
+}
+
+.container2{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.heading h2{
+    font-size: 50px;
+    font-family: "helvetica", sans-serif;;
+    color: #000;
+    text-align: center;
+    margin: 10vh 20vw;
+}
+
+.image2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 40px 160px;
+    gap: 200px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: "helvetica", sans-serif;
+    padding-right: 185px;
+}
+
+.text-content p {
+    font-size: 1.06rem;
+    color: #444;
+    font-family: "helvetica", sans-serif;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-right: 102px;
+
+
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #007A5A;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    font-family: "helvetica", sans-serif;
+}
+
+.learn-more span {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    font-family: "helvetica", sans-serif;
+}
+
+.image-content img {
+    width: 310px; /* Adjust size as needed */
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); */
+}
+
+.dark_back{
+    background-color: #111b21;
+}
+
+.dark_back img{
+    width: 100%;
+}
+
+
+.dark_back .text-content h1 {
+    font-family: "helvetica", sans-serif;
+    color: #fff;
+}
+.dark_back .text-content .green {
+    font-family: "helvetica", sans-serif;
+    color: #40c063;
+}
+.dark_back .text-content p {
+    font-family: "helvetica", sans-serif;
+    color: #fff;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #111b21;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "helvetica", sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    font-family: "helvetica", sans-serif;
+    padding: 20px;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-family: "helvetica", sans-serif;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    font-family: "helvetica", sans-serif;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #111b21;
+    font-family: "helvetica", sans-serif;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    font-family: "helvetica", sans-serif;
+    margin: 5px 0;
+}
+
+/* .dark_back .image-content{ */
+    /* background-color: #111b21; */
+/* } */
